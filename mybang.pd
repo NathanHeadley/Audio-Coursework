@@ -1,0 +1,28 @@
+#N canvas 649 216 958 988 10;
+#X floatatom 51 -17 5 0 0 0 - - -, f 5;
+#X obj 51 -39 r \$1_cell;
+#X obj 51 5 mtof;
+#X obj 50 216 dac~;
+#X obj 51 164 *~;
+#X obj 51 50 osc~ 440;
+#X obj 50 191 *~ 0.1;
+#X obj 51 28 sig~;
+#X obj 69 78 r volume;
+#X obj 69 142 *;
+#X obj 102 102 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X floatatom 87 125 5 0 0 0 - - -, f 5;
+#X floatatom 145 91 5 0 0 0 - - -, f 5;
+#X connect 0 0 2 0;
+#X connect 1 0 0 0;
+#X connect 2 0 7 0;
+#X connect 4 0 6 0;
+#X connect 5 0 4 0;
+#X connect 6 0 3 0;
+#X connect 6 0 3 1;
+#X connect 7 0 5 0;
+#X connect 9 0 4 1;
+#X connect 10 0 11 0;
+#X connect 11 0 9 1;
+#X connect 12 0 9 0;
+#X coords 0 -1 1 1 19 19 2 100 100;
